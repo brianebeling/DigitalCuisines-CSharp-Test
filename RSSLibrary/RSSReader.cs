@@ -8,7 +8,7 @@ namespace RSSLibrary
     {
         private readonly string endpoint;
 
-        public RSSReader(string endpoint)
+        public RSSReader(string endpoint = "https://feeds.bbci.co.uk/news/rss.xml")
         {
             this.endpoint = endpoint;
         }

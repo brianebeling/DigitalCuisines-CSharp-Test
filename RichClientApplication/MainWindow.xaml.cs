@@ -29,7 +29,7 @@ namespace RichClientApplication
             var rssReader = new RSSReader();
             var feed = rssReader.ReadFeed();
 
-            Feed.ItemsSource = feed.Channel.Item;
+            Feed.ItemsSource = feed.Channel.Items;
         }
     }
 }

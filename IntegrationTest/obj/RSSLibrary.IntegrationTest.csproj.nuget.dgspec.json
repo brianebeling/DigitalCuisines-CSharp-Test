@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Repositories\\Ebeling.Brian\\RSSLibrary.IntegrationTest\\RSSLibrary.IntegrationTest.csproj": {}
+    "E:\\Repositories\\Ebeling.Brian\\IntegrationTest\\RSSLibrary.IntegrationTest.csproj": {}
   },
   "projects": {
-    "E:\\Repositories\\Ebeling.Brian\\RSSLibrary.IntegrationTest\\RSSLibrary.IntegrationTest.csproj": {
+    "E:\\Repositories\\Ebeling.Brian\\IntegrationTest\\RSSLibrary.IntegrationTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Repositories\\Ebeling.Brian\\RSSLibrary.IntegrationTest\\RSSLibrary.IntegrationTest.csproj",
+        "projectUniqueName": "E:\\Repositories\\Ebeling.Brian\\IntegrationTest\\RSSLibrary.IntegrationTest.csproj",
         "projectName": "RSSLibrary.IntegrationTest",
-        "projectPath": "E:\\Repositories\\Ebeling.Brian\\RSSLibrary.IntegrationTest\\RSSLibrary.IntegrationTest.csproj",
+        "projectPath": "E:\\Repositories\\Ebeling.Brian\\IntegrationTest\\RSSLibrary.IntegrationTest.csproj",
         "packagesPath": "C:\\Users\\Brian\\.nuget\\packages\\",
-        "outputPath": "E:\\Repositories\\Ebeling.Brian\\RSSLibrary.IntegrationTest\\obj\\",
+        "outputPath": "E:\\Repositories\\Ebeling.Brian\\IntegrationTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

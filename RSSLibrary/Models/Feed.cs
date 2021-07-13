@@ -3,7 +3,7 @@
 namespace RSSLibrary.Models
 {
     [XmlRoot(ElementName = "rss")]
-    public class Rss
+    public class Feed
     {
         [XmlElement(ElementName = "channel")] public Channel Channel { get; set; }
 

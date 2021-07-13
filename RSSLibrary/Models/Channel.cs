@@ -28,6 +28,6 @@ namespace RSSLibrary.Models
 
         [XmlElement(ElementName = "ttl")] public string Ttl { get; set; }
 
-        [XmlElement(ElementName = "item")] public List<Item> Item { get; set; }
+        [XmlElement(ElementName = "item")] public List<Item> Items { get; set; }
     }
 }

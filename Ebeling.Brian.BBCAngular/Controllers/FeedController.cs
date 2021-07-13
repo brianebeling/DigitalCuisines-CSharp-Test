@@ -29,7 +29,7 @@ namespace Ebeling.Brian.BBCAngular.Controllers
 
             var feed = rssReader.ReadFeed();
 
-            foreach (var item in feed.Channel.Item)
+            foreach (var item in feed.Channel.Items)
             {
                 yield return new FeedItem()
                 {

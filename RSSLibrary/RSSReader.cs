@@ -1,4 +1,6 @@
-﻿using System.Xml;
+﻿using System;
+using System.Net.Http;
+using System.Xml;
 using System.Xml.Serialization;
 using RSSLibrary.Models;
 
@@ -13,11 +15,11 @@ namespace RSSLibrary
             this.endpoint = endpoint;
         }
 
-        public Rss ReadFeed()
+        public Feed ReadFeed()
         {
             var xmlTextReader = new XmlTextReader(endpoint);
-            var serializer = new XmlSerializer(typeof(Rss));
-            return (Rss) serializer.Deserialize(xmlTextReader);
+            var serializer = new XmlSerializer(typeof(Feed));
+            return (Feed) serializer.Deserialize(xmlTextReader);
         }
     }
 }

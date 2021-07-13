@@ -14,7 +14,7 @@ namespace RSSLibrary.IntegrationTest
 
             Console.WriteLine($"Version {feed.Version}");
 
-            foreach (var rssChannelItem in feed.Channel.Item)
+            foreach (var rssChannelItem in feed.Channel.Items)
                 Console.WriteLine($"Title> {rssChannelItem.Title} {Environment.NewLine} {rssChannelItem.Description}");
 
             Console.ReadKey();

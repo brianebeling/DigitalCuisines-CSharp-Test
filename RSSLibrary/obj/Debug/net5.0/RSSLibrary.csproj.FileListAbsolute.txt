@@ -9,3 +9,4 @@ E:\Repositories\Ebeling.Brian\RSSLibrary\obj\Debug\net5.0\RSSLibrary.csproj.Core
 E:\Repositories\Ebeling.Brian\RSSLibrary\obj\Debug\net5.0\RSSLibrary.dll
 E:\Repositories\Ebeling.Brian\RSSLibrary\obj\Debug\net5.0\ref\RSSLibrary.dll
 E:\Repositories\Ebeling.Brian\RSSLibrary\obj\Debug\net5.0\RSSLibrary.pdb
+E:\Repositories\Ebeling.Brian\RSSLibrary\obj\Debug\net5.0\RSSLibrary.csproj.AssemblyReference.cache

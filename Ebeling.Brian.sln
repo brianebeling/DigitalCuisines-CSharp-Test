@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSSLibrary.IntegrationTest"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RichClientApplication", "RichClientApplication\RichClientApplication.csproj", "{3C788865-2B04-460E-86B1-06CEF7A0B2DD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ebeling.Brian.BBCAngular", "Ebeling.Brian.BBCAngular\Ebeling.Brian.BBCAngular.csproj", "{A2ACE465-F03C-40F7-B6DB-081154055163}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ebeling.Brian.BBCAngular", "Ebeling.Brian.BBCAngular\Ebeling.Brian.BBCAngular.csproj", "{14BD95A4-3414-40CC-90D9-6492ACB0656B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{3C788865-2B04-460E-86B1-06CEF7A0B2DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C788865-2B04-460E-86B1-06CEF7A0B2DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C788865-2B04-460E-86B1-06CEF7A0B2DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A2ACE465-F03C-40F7-B6DB-081154055163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2ACE465-F03C-40F7-B6DB-081154055163}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A2ACE465-F03C-40F7-B6DB-081154055163}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A2ACE465-F03C-40F7-B6DB-081154055163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14BD95A4-3414-40CC-90D9-6492ACB0656B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14BD95A4-3414-40CC-90D9-6492ACB0656B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14BD95A4-3414-40CC-90D9-6492ACB0656B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14BD95A4-3414-40CC-90D9-6492ACB0656B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

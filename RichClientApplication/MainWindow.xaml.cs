@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using RSSLibrary;
+using RSSLibrary.Models;
 
 namespace RichClientApplication
 {
@@ -25,11 +25,17 @@ namespace RichClientApplication
         {
             InitializeComponent();
             this.DataContext = this;
-
+            
             var rssReader = new RSSReader();
-            var feed = rssReader.ReadFeed();
 
-            Feed.ItemsSource = feed.Channel.Items;
+            var feed = new NotifyTaskCompletion<Feed>(rssReader.ReadFeedAsync());
+
+            if (feed.Status == TaskStatus.Faulted)
+            {
+                // TODO Handle exception in UI for example
+                return;
+            }
+            Feed.ItemsSource = feed.Result.Channel.Items;
         }
     }
 }

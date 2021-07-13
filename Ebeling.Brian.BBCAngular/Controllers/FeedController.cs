@@ -23,11 +23,11 @@ namespace Ebeling.Brian.BBCAngular.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<FeedItem> Get()
+        public async IAsyncEnumerable<FeedItem> Get()
         {
             // TODO Automapper (overkill for this task)
 
-            var feed = rssReader.ReadFeed();
+            var feed = await rssReader.ReadFeedAsync();
 
             foreach (var item in feed.Channel.Items)
             {

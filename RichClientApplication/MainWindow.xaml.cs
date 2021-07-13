@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,26 +17,25 @@ using RSSLibrary.Models;
 
 namespace RichClientApplication
 {
+    
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        public ObservableCollection<Feed> FeedItems = new ObservableCollection<Feed>();
         public MainWindow()
         {
             InitializeComponent();
             this.DataContext = this;
             
-            var rssReader = new RSSReader();
+            GetFeedItems();
+        }
 
-            var feed = new NotifyTaskCompletion<Feed>(rssReader.ReadFeedAsync());
-
-            if (feed.Status == TaskStatus.Faulted)
-            {
-                // TODO Handle exception in UI for example
-                return;
-            }
-            Feed.ItemsSource = feed.Result.Channel.Items;
+        private async void GetFeedItems()
+        {
+            Feed.ItemsSource = (await new RSSReader().ReadFeedAsync()).Channel.Items;
         }
     }
 }

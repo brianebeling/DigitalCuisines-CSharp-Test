@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:models="clr-namespace:RSSLibrary.Models;assembly=RSSLibrary"
         mc:Ignorable="d"
         Title="MainWindow" Height="540" Width="960">
     <Grid>
@@ -10,7 +11,7 @@
             BBC News
         </TextBlock>
 
-        <ListBox Name="Feed" Margin="24,93,10,10" BorderThickness="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+        <ListBox ItemsSource="{Binding FeedItems}" Name="Feed" Margin="24,93,10,10" BorderThickness="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListBox.ItemTemplate>
                 <DataTemplate >
                     <Grid Margin="0,24, 0, 0">
@@ -20,8 +21,8 @@
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
                         <Separator Name="Separator" Grid.Row="2" Width="{Binding ElementName=Feed, Path=ActualWidth}" Margin="0, 16, 0 ,0"/>
-                        <TextBlock Grid.Row="0" Text="{Binding Title}" FontSize="20" TextWrapping="Wrap"/>
-                        <TextBlock Grid.Row="1" Text="{Binding Description}" FontSize="16" Margin="0, 8"  TextWrapping="Wrap"/>
+                        <TextBlock Grid.Row="0" Text="{Binding (models:Item.Title)}" FontSize="20" TextWrapping="Wrap"/>
+                        <TextBlock Grid.Row="1" Text="{Binding (models:Item.Title)}" FontSize="16" Margin="0, 8"  TextWrapping="Wrap"/>
 
                     </Grid>
                 </DataTemplate>
